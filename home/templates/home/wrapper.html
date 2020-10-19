@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1170">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+  <script src="{% static "home/js/script.js" %}"></script>
+	<link rel="stylesheet"  href="{% static "home/css/style.css" %}">
+</head>
+ <body>
+   {% block content %}
+   {% endblock %}
+  <div class="heading-section">
+    <div class="heading">
+      <span class="toggle-button">
+     <div class="menu-bar menu-bar-top"></div>
+     <div class="menu-bar menu-bar-middle"></div>
+     <div class="menu-bar menu-bar-bottom"></div>
+      </span>
+      <img class="logo" src="{% static "home/images/juba.svg" %}" width="300" align="center">
+        <hr class="afterlogo">
+        <nav>
+        <ul class="header-menu">
+          <li class="menu-item"><a href="/catalog">Мужское</a></li>
+          <li class="menu-item"><a href="/women">Женское</a></li>
+          <li class="menu-item"> <a href="/accesorices">Аксессуары</a></li>
+          <li class="menu-item"><a href="/boggers">Блогерские коллекции</a></li>
+          <li class="menu-item"><a href="/faq">FAQ</a></li>
+          <li class="menu-item"><a href="/status">Статус заказа</a></li>
+        </ul>
+      </nav>
+        <div class="acccart">
+          <img class="account" src="{% static "home/images/account.svg" %}" width="50" height="50">
+          <img  class="cart" src="{% static "home/images/cart.svg" %}"  width="50" height="50">
+        </div>
+
+    </div>
+  </div>
+  <div class="buttom">
+  <div class="buttom-section">
+    <div class="buttom-menu">
+      <nav class="buttom-nav">
+      <ul>
+        <li class="menu-item"><a href="/catalog">Мужское</a></li>
+        <li class="menu-item"><a href="/women">Женское</a></li>
+        <li class="menu-item"> <a href="/accesorices">Аксессуары</a></li>
+        <li class="menu-item"><a href="/boggers">Блогерские коллекции</a></li>
+        <li class="menu-item"><a href="/faq">FAQ</a></li>
+        <li class="menu-item"><a href="/status">Статус заказа</a></li>
+      </ul>
+    </nav>
+    </div>
+
+
+        <img class="buttom-logo" src="{% static "home/images/juba.svg" %}" width="200" align="center">
+        <div class="vkinsta">
+          <img  class="vk" src="{% static "home/images/vk.svg" %}"  width="50" height="50">
+            <img  class="insta" src="{% static "home/images/insta.svg" %}"  width="50" height="50">
+        </div>
+
+</div>
+  </div>
+
+
+
+ </body>
+ </html>
